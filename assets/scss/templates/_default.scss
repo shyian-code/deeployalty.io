@@ -1,0 +1,13 @@
+/* ---------------------------------------
+	TMPL: Default
+--------------------------------------- */
+.not-found {
+  &__description {
+    color: #fff;
+  }
+  .label {
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+}

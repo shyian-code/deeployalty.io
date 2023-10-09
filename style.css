@@ -1,0 +1,52 @@
+/**
+ * Theme Name: Deep Loyalty, Inc.
+ * Author: ShyianCode
+ * Version: 99.0
+**/
+
+.navbar-lang__link-divider{
+    margin: 0 16px 0 16px;
+}
+
+.h1{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: inherit;
+}
+.h2{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: inherit;
+}
+.h2.cost__title,
+.h2.partners__title,
+.h2.faq__title{
+    margin-bottom: 160px;
+}
+.h3{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+}
+.h3.contact__title{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+.logo .h1{
+    font-size: inherit;
+}
+
+@media (max-width: 767.98px){
+    .h2.cost__title,
+    .h2.partners__title,
+    .h2.faq__title{
+        margin-bottom: 100px;
+    }
+}

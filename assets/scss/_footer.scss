@@ -1,0 +1,201 @@
+.footer {
+	margin-top: auto;
+	margin-bottom: 100px;
+	padding: 3.5rem 0;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $text-color;
+
+	&__link {
+		color: $text-color;
+		&--terms {
+			margin-right: 40px;
+			@include media-breakpoint-down(md) {
+				margin-right: 20px;
+			}
+
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 15px;
+			}
+		}
+
+		&--policy {
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 15px;
+			}
+		}
+
+		&--linkedin {
+			margin-left: 40px;
+			@include media-breakpoint-down(md) {
+				margin-left: 20px;
+			}
+
+			@include media-breakpoint-down(sm) {
+				margin-left: 0;
+				margin-bottom: 15px;
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&__inner-wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+		}
+	}
+
+	&__links-wrapper {
+		@include media-breakpoint-down(sm) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__menu-list {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		margin: 0;
+		@include media-breakpoint-down(sm) {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.nav-item {
+			margin-left: 0;
+		}
+
+		.nav-link {
+			text-decoration: none;
+			padding: 0 0 15px 0;
+			border-bottom: 1px solid transparent;
+			color: $text-color;
+			font-weight: 400;
+			font-size: 14px;
+
+			&:hover {
+				text-decoration: none;
+				color: inherit;
+				border-bottom: 1px solid $text-color;
+			}
+		}
+
+		.nav-item.active > a {
+			background: transparent;
+			color: inherit;
+		}
+	}
+
+	&__copy {
+		padding-bottom: 10px;
+
+		p {
+			font-size: 14px;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+
+			&:hover {
+				color: $blue;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			order: 3;
+
+		}
+	}
+
+	&__socials-wrapper {
+		@include media-breakpoint-down(sm) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+
+// Modal window
+body.modal-active .hubspot-wrapper.hubspot-wrapper-header {
+	display: block;
+}
+
+body.menu-active.modal-active .hubspot-wrapper.hubspot-wrapper-header {
+	display: none!important;
+}
+
+.modal {
+	position: fixed;
+	padding: 32px 30px 15px 30px;
+	//margin: 0 15px;
+	max-width: 630px;
+	display: none;
+	top: 50px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 98;
+	border-radius: 20px;
+
+	background: #fff;
+	border: 1px solid rgba(210, 210, 218, 0.2);
+	backdrop-filter: blur(2px);
+
+	@include media-breakpoint-down(sm) {
+		top: 35px;
+		padding: 20px 20px 5px 20px;
+		margin: 0 15px;
+	}
+}
+
+.contact__title {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1;
+	background: linear-gradient(94.58deg, #6154F2 -13.12%, #62D6C2 115.56%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 40px;
+}
+
+.hubspot-wrapper.hubspot-wrapper-header {
+	//display: none;
+}
+
+.side-menu__close {
+	position: absolute;
+	right: 23px;
+	top: 28px;
+	cursor: pointer;
+	z-index: 99;
+
+	@include media-breakpoint-down(sm) {
+		top: 15px;
+	}
+}
+
+.side-menu__close svg {
+	width: 32px;
+	height: 32px;
+}
+
+.side-menu__close path {
+	fill: #124f91;
+}
+
+.side-menu__close:hover path {
+	fill: #DB551D;
+}
+
+
+#hbst-general .hubspot-link__container.sproket {
+	display: none!important;
+}

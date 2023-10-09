@@ -1,0 +1,39 @@
+// Project variables
+
+$blue: #002857;
+$green: #69bf4a;
+$white: #ffffff;
+$navy: #1c393d;
+$gray: rgb(210, 210, 218);
+$dark-gray: #454646;
+$dark-gray-2: #242424;
+$black: #070707;
+$lite-gray: #616060;
+
+
+$text-color: $gray;
+
+$main-color: $blue;
+$sub-color: $green;
+
+$font: 'Mona Sans', sans-serif;
+$sub-font: $font;
+$fa: 'Font Awesome 5 Free';
+$fab: 'Font Awesome 5 Brands';
+
+// Font Awesome Vars
+$fa-font-path: "../fonts";
+$fa-font-display: swap;
+
+// Project mixins
+
+
+// Custom fonts
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+          url('../fonts/MonaSans.woff2') format('woff2 supports variations'),
+          url('../fonts/MonaSans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
